@@ -2,9 +2,8 @@
 
 Men hur vet den vad som egentligen är ändrat?
 
-# hello-world
-Following githubs hello world tutorial
-
+#Pisshög
+Är allt det handlar om
 
 Detta är ju ändringar i filen
 
