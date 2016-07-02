@@ -71,7 +71,12 @@ update(void) {
 
 void
 draw(void) {
+	Uint32* px = screen->pixels, x, y;
 	SDL_FillRect(screen,0,0x000080ff);
+	for(y=0;y<SCR_H;++y)
+	for(x=0;x<SCR_W;++x) {
+		*px++ = x^y;
+	}
 	SDL_Flip(screen);
 }
 
