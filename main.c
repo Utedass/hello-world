@@ -5,6 +5,8 @@
 #define SCR_W 320
 #define SCR_H 240
 
+void update_shit(Uint32* s, Uint32 w, Uint32 h);
+
 int				running;
 Uint32			tick, oldtick;
 SDL_Surface*	screen;
@@ -72,11 +74,12 @@ update(void) {
 void
 draw(void) {
 	Uint32* px = screen->pixels, x, y;
-	SDL_FillRect(screen,0,0x000080ff);
+	/*SDL_FillRect(screen,0,0x000080ff);
 	for(y=0;y<SCR_H;++y)
 	for(x=0;x<SCR_W;++x) {
 		*px++ = x^y;
-	}
+	}*/
+	update_shit(px,SCR_W,SCR_H);
 	SDL_Flip(screen);
 }
 
