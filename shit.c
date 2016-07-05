@@ -1,7 +1,7 @@
-#include <stdlib.h>
-typedef unsigned short nat16;
-typedef unsigned int nat32;
+#include "global.h"
+
 #define MAX_SHIT 256
+
 nat32 count = 0;
 struct {
 	nat16 x,y;
@@ -31,7 +31,6 @@ void update_shit(nat32* s, nat32 w, nat32 h) {
 			continue;
 		}
 		s[w*stuf[n].y+stuf[n].x] += 0x101010;
-		s[n]=0xffffff;
 		++n;
 	}
 

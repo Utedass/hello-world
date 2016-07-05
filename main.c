@@ -1,9 +1,4 @@
-#include <SDL/SDL.h>
-#define	ERROR(str, ...) fprintf(stderr, str, __VA_ARGS__)
-#define true 1
-#define false 0
-#define SCR_W 320
-#define SCR_H 240
+#include "global.h"
 
 void update_shit(Uint32* s, Uint32 w, Uint32 h);
 
