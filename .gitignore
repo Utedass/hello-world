@@ -2,4 +2,5 @@ bin
 obj
 *.cbp
 *.depend
+*.layout
 cb-project
